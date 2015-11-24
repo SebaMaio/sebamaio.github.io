@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix admin: <http://webns.net/mvcb/> .
+
+<>
+    a foaf:PersonalProfileDocument;
+    foaf:maker <https://www.facebook.com/sebastian.maio.89>;
+    foaf:primaryTopic <https://www.facebook.com/sebastian.maio.89>;
+    admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic>;
+    admin:errorReportsTo <mailto:leigh@ldodds.com>.
+
+<https://www.facebook.com/sebastian.maio.89>
+    a foaf:Person;
+    foaf:name "Sebastian Andres Maio" ; 
+    foaf:givenname "Sebastian Andres" ;
+    foaf:family_name "Maio" ;
+foaf:nick "Seba" ;
+foaf:gender "Male" ;
+foaf:birthday '06-10' ;
+
+
+
+foaf:mbox_sha1sum "37290be2e91a1423d2be238116881e7b00c67f52" ;
+foaf:depiction <https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/c249.0.610.610/s160x160/1017057_281090042035503_1976989176_n.jpg?oh=6a469e5e99b51ccbeb039bf0bcd09f33&oe=56B0D984&__gda__=1454248863_a86b155cf39f79c621ba302c52cc40f0> ;
+
+foaf:workplaceHomepage <http://www.navalstar.com> ;
+foaf:schoolHomepage <http://www.escuelafape.com> ;
+
+foaf:knows [
+    a foaf:Person ; 
+    foaf:name "Santiago Ocamica" ;
+    foaf:mbox_sha1sum "d7a5162db52f71cd7cf8da9bf22db4bce975cfad"
+    ], [
+        a foaf:Person ;
+        foaf:name "teresa fontanella de santis" ;
+        foaf:mbox_sha1sum "c841d344093d1e08b7936f5334e2ac07d9cdf7e2"  ;
+        rdfs:seeAlso <https://www.linkedin.com/pub/teresa-fontanella-de-santis/26/631/944>
+    ];
+
+_:juanmartin a foaf:Person;
+             foaf:name "Juan Martin Buireo";
+             foaf:mbox <mailto:bahui80@gmail.com>;
+             rdfs:seeAlso <http://bahui80.github.io/webSemantica/foaf.ttl>.
+
+<https://www.facebook.com/sebastian.maio.89> foaf:knows _:juanmartin.
